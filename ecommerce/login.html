@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form{
+             width:30%;
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             margin: auto;
+             text-align: center;
+         }
+         #email,#user,#password{
+             height:40px;
+             width:90%;
+             margin-top:20px;
+             font-size:20px;
+
+         }
+         #submit{
+             width:70%;
+             height:50px;
+             margin: 15px 0px;
+             background-color:rgb(216,119,94);
+             color:white;
+             font-size:25px;
+             border-radius: 8px;
+
+         }
+         #submit1{
+             width:70%;
+             height:50px;
+             margin: 15px 0px;
+             background-color:rgb(216,119,94);
+             color:white;
+             font-size:25px;
+             border-radius: 8px;
+
+         }
+         #img{
+             width: 300px;
+             height: 100px;
+             margin: auto;
+            
+             margin-bottom: -10px;
+         }
+         img{
+             width: 100%;
+             height: 100%;
+         }
+         h1{
+             color:rgb(216,119,94);
+         }
+</style>
+<body>
+    <div id="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROM5tynvviSQbH90rWX_OOzqYgt-1K8mO2hA&usqp=CAU">
+
+    </div>
+    <form id="form">
+        <h1>Please Log In</h1>
+        <input id="user" type="text" placeholder="Enter Username or mail">
+        <input id="password" type="text" placeholder="Enter your password">
+        <input type="submit" id="submit"><br>
+        <button id="submit1" onclick="window.location.href='signup.html'">Signup</button>
+       
+    </form>
+   
+</body>
+</html>
+<script>
+    var regUser=JSON.parse(localStorage.getItem("signupData"));
+    document.querySelector("#form").addEventListener("submit",formSubmission);
+
+    var form=document.querySelector("#form");
+
+    function formSubmission(event){
+        event.preventDefault();
+        var user=form.user.value;
+        var password=form.password.value;
+        //its like getting the input value instead of that document.queriseletor that thing
+        var flag=false;
+    for(var i=0;i<regUser.length;i++)
+        {
+            if(regUser[i].user==user && regUser[i].password==password )
+            {
+                flag=true;
+               
+            }
+        }
+        if(flag==false)
+        {
+            alert("Login Failed")
+        }
+        else{
+            alert("login Success")
+        }
+        document.querySelector("input[type='submit']").addEventListener("click",function(){
+            window.location.href="mens.html"
+        });
+    }
+   
+</script>

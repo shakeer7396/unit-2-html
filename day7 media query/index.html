@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #head{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+            width:80%;
+            margin:auto;
+            
+
+        }
+        #head>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:10px;
+            border-radius:8px;
+        }
+        img{
+            width:100%;
+            height:auto;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }      
+        @media all and (min-width:380px) and (max-width:700px){
+            #head{
+                display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto auto;
+            gap:20px;
+                        
+            }
+
+        }
+
+        @media all and (max-width:379px){
+        #head{
+                display:grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:repeat(3, auto );
+            gap:20px;          
+            
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>OUR BLOG</h1>
+    <div id="head">
+        <div>
+            
+            <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
+            <h3>Black Friday Guide:Best Sales & Discount Coads</h3>
+            <p>By Nancy Ward on july 22 2017</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis delectus nostrum ea unde quasi exercitationem quia sapiente, architecto non cumque. Iusto, cumque? Reiciendis, </p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1641730710827-a3305f63c6a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+            <h3>The White Sneakers neerly Every Fashion Girl Own</h3>
+            <p>By Nancy Ward on july 22 2017</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis delectus nostrum ea unde quasi exercitationem quia sapiente, architecto non cumque. Iusto, cumque? Reiciendis, </p>
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1641157139239-bb187cb84620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+            <h3>New York SS 2018 Street style: Annina Mislin</h3>
+            <p>By Nancy Ward on july 22 2017</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis delectus nostrum ea unde quasi exercitationem quia sapiente, architecto non cumque. Iusto, cumque? Reiciendis, </p>
+        </div>
+    </div>
+</body>
+</html>

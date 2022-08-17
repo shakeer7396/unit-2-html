@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 50px 300px;
+            grid-gap:20px;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "b1 b2 b3 b4"
+        }
+       
+        #head>div:nth-child(1){
+            grid-area:nav;
+            background-color: yellow;
+
+        }
+        #head>div:nth-child(2){
+            grid-area:b1;
+            background-color:red;
+        }
+        #head>div:nth-child(3){
+            grid-area:b2;
+            background-color:green;
+        }
+        #head>div:nth-child(4){
+            grid-area:b3;
+            background-color:blue;
+        }
+        #head>div:nth-child(5){
+            grid-area:b4;
+            background-color:grey;
+        }
+        @media all and (min-width:380px) and (max-width:700px){
+            #head{
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 50px 300px 300px;
+                grid-template-areas: 
+            "nav nav"
+            "b1 b3"
+            "b2 b4"
+            }
+        }
+
+        @media all and  (max-width:379px){
+            #head{
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 80px 200px 200px 200px 200px;
+                grid-template-areas: 
+            "nav nav nav nav"
+            "b1 b1 b1 b1"
+            "b4 b4 b4 b4"
+            "b2 b2 b2 b2"
+            "b3 b3 b3 b3"
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <div id="head">
+       <div>Navigation</div>
+       <div>box 1</div>
+       <div>box 2</div>
+       <div>box 3</div>
+       <div>box 4</div>
+   </div> 
+</body>
+</html>

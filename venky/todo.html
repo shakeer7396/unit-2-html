@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #container{
+                width:70%;
+                height:400px;
+                display:grid;
+                grid-template-columns: repeat(4,70%);
+                grid-template-rows: 180px;
+                gap:0px;
+                /* border:1px solid red; */
+                margin:auto;
+                overflow: scroll;
+            }
+            #container>div{
+                width:75%;
+                height:auto;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+                display:flex;
+                background: rgba(55,159,142,.05) url(/images/doctor-notes-bg.svg) 100% 0 no-repeat;
+                
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+
+            }
+            .a{
+                width:25%;
+                height:100%;
+                /* border:1px solid green; */
+            }
+            .b{
+                width:100%;
+                height:auto;
+                /* border:1px solid yellow; */
+            }
+            img{
+               width:70%;
+               height:60%; 
+               border-radius: 20px ;
+                
+                border:3px solid green;
+                margin-top: 30px;
+                margin-left: 20px;
+              
+            }
+            p{
+                font-size: 18px;
+                color:grey;
+            }
+            h1{
+                color:green;
+            }
+
+        </style>
+    <body>
+        <div id="container">
+            <div>
+                <div class="a">
+                  <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_400,c_limit/v1604583668/staging/Home/Images/Rectangle_56.jpg" alt="">  
+                </div>
+                <div class="b">
+                    <h1>Dr. Sharmatha Kumar</h1>
+                    <p>Dr. Kumar is a practicing dermatologist with a decade of experience treating women. She specializes in aesthetic dermatology and hair restoration. She is a passionate advocate for safe and effective skin &amp; hair care.</p>
+                </div>
+            </div>
+            <div>
+                <div class="a">
+                    <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1621261618/Dr_Poonam_Mishra1.jpg" alt="">  
+                  </div>
+                  <div class="b">
+                      <h1>Dr. Poonam Mishra</h1>
+                     <p>Dr. Mishra is an obstetrician and gynecologist with a keen focus on Infertility and high-risk pregnancy. She is a teacher and awareness generator, involved in different programs as Anemia Prevention, Adolescent health, Say no to NTDs, and No more leaks. </p>
+                  </div>
+            </div>
+            <div>
+                <div class="a">
+                    <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_400,c_limit/v1604583668/staging/Home/Images/Rectangle_56-1.jpg" alt="">  
+                  </div>
+                  <div class="b">
+                      <h1>Dr. Supriya Vatkar</h1>
+                     <p>Dr. Vatkar is a dermatologist and an esteemed fellow of several Indian and international institutes. She specializes in cutting edge technologies focused on Indian skin. She is a strong advocate of cruelty free products.</p>
+                  </div>
+            </div>
+            <div>
+                <div class="a">
+                    <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_400,c_limit/v1604583668/staging/Home/Images/Rectangle_56-2.jpg" alt="">  
+                  </div>
+                  <div class="b">
+                      <h1>Dr. Shobitha Anand</h1>
+                     <p>Dr. Anand is a practicing cosmetologist who deals with skin and hair conditions specifically focusing on conditions that affect women of a younger age. Her interest in these cases is deep rooted in her personal experiences.</p>
+                  </div> 
+            </div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

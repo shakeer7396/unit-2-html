@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(3,150px);
+            width:60%;
+            margin:auto;
+            grid-gap:20px;
+            padding-top:100px;
+            grid-template-areas:
+            "k l l m"
+            "n n o p"
+            "q r s s"
+        }
+        #head>div{
+            background-color:teal;
+            border-radius:5px;
+        }
+        .a{
+            grid-area:k;
+        }
+        .b{
+            grid-area:l;
+        }
+        .c{
+            grid-area:m;
+        }
+        .d{
+            grid-area:n;
+        }
+        .e{
+            grid-area:o;
+        }
+        .f{
+            grid-area:p;
+        }
+        .g{
+            grid-area:q;
+        }
+        .h{
+            grid-area:r;
+        }
+        .i{
+            grid-area:s;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+    </div>
+</body>
+</html>

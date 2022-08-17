@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         #form{
+             width:30%;
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             margin: auto;
+         }
+         #name,#pass,#email{
+             width: 90%;
+             height: 40px;
+             margin-top: 20px;
+             margin-left: 17px;
+             font-size: 15px;
+            
+            
+         }
+         #submit{
+            width: 90%;
+             height: 40px;
+             margin:10px auto;
+             margin-left: 22px;
+             font-size: 15px;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             border-radius: 3px;
+             background-color: yellowgreen;
+            
+         }
+         h1{
+             text-align: center;
+             color:yellowgreen
+         }
+         #img{
+             width: 200px;
+             height: 100px;
+             margin: auto;
+            
+             margin-bottom: -10px;
+         }
+         
+     </style>
+</head>
+<body>
+    
+  
+    <form id="form">
+        <h1>Please Create Account</h1>
+        <input id="name" type="text" placeholder="user name">
+        <input id="pass" type="password" placeholder="password">
+        <input id="email" type="email" placeholder="email">
+        <input id ="submit" type="submit">
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit",formSubmit)
+    var signArr=JSON.parse(localStorage.getItem("signupDetails")) || []
+    function formSubmit(event){
+        event.preventDefault();
+        var name=document.querySelector("#name").value;
+        var pass=document.querySelector("#pass").value;
+        var email=document.querySelector("#email").value;
+        console.log(name,pass,email)
+    
+    var signupObj={
+        name:name,
+        pass:pass,
+        email:email
+    };
+    signArr.push(signupObj);
+  console.log(signArr)
+  localStorage.setItem("signupDetails",JSON.stringify(signArr));
+  document.querySelector("input[type='submit']").addEventListener("click",function(){
+  window.location.href="login.html";
+});
+    }
+</script>

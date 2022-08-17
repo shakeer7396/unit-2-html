@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #form{
+             width:30%;
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             margin: auto;
+         }
+         #name,#pass,#email{
+             width: 90%;
+             height: 40px;
+             margin-top: 20px;
+             margin-left: 17px;
+             font-size: 15px;
+            
+         }
+         #submit{
+            width: 90%;
+             height: 40px;
+             margin:10px auto;
+             margin-left: 22px;
+             font-size: 15px;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             border-radius: 3px;
+             background-color: green;
+            
+         }
+         h1{
+             text-align: center;
+             margin-bottom: -5px;
+             color:green;
+         }
+         
+         #img{
+             width: 200px;
+             height: 100px;
+             margin: auto;
+            
+             margin-bottom: -10px;
+         }
+         img{
+             width: 100%;
+             height: 100%;
+         }
+    </style>
+</head>
+<body>
+    
+    
+<form id="form">
+    
+    <h1>Please Login</h1>
+    <input id="name" type="text" placeholder="enter name">
+    <input id="pass" type="password" placeholder="enter password">
+    <input id="submit" type="submit">
+    <h2></h2>
+</form>
+</body>
+</html>
+<script>
+   var regUser=JSON.parse(localStorage.getItem("signupDetails"))
+//    console.log(regUser);
+   document.querySelector("#form").addEventListener("submit",formSubmit);
+   var form=document.querySelector("#form")
+   function formSubmit(event){
+       event.preventDefault();
+
+       var user=form.name.value;
+       var pass=form.pass.value;
+        // console.log(user,pass)
+
+       for(var i=0; i<regUser.length; i++){
+         if(regUser[i].name==null && regUser[i].pass==null){
+        document.querySelector("h2").innerText="enter your username or password";
+       }
+          else  if(regUser[i].name==user && regUser[i].pass==pass){
+           console.log("log in success");
+           document.querySelector("h2").innerText="login successfull";
+           
+           alert("login successfull")
+           window.location.href="index.html";
+           break;
+       }
+       
+       else{
+        //    console.log("log in fail")
+           document.querySelector("h2").innerText="login failled";
+          
+          // alert("login failled ,please enter correct password")
+           
+           
+           
+       }
+       }
+       
+   }
+</script>

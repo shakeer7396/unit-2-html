@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit-2 C2</title>
+    <style>
+       #courses{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 200px 200px;
+            grid-gap:20px;
+            width:80%;
+            margin:auto;
+        }
+        .a{
+            /* border:1px solid blue; */
+            width:30%;
+            padding:55px 0px 0px 40px ;
+            align-items: center;
+            
+
+        }
+        .b{
+            /* border:1px solid green; */
+            width:69%;
+            padding-top:10px;
+        }
+        .a>img{
+            width:50%;
+            height:50%;
+            border-radius:50%;
+            
+        }
+
+        #courses>div{
+            /* border:1px solid red; */
+            display:flex;
+        }
+        h1,p{
+          text-align:center;
+        }
+        #teachers{
+          display:grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: 500px ;
+          gap:20px;
+        }
+        #teachers>div{
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .s>img{
+          width:100%;
+          height:70%;
+
+        }
+        h2{
+          text-align:center;
+        }
+        h2+p{
+          color:red;
+        }
+    
+      /* Write your styles here */
+
+      /* keep media queries at that last */
+      /* medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 720px) {
+      }
+
+      /* small screens */
+      @media only screen and (min-width: 0px) and (max-width: 420px) {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Courses section - top section -->
+    <div id="courses">
+      <div>
+        <div class="a">  
+        <img
+        src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+    </div>
+    <div class="b">
+        <h1>Business School</h1>
+        <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+    </div>
+    </div>
+    <div>
+        <div class="a">
+            
+            <img
+            src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+
+        </div>
+        <div class="b">
+            <h1>Marketing</h1>
+            <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+        </div>
+    </div>
+    <div>
+      <div class="a">  
+        <img
+        src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+    </div>
+    <div class="b">
+        <h1>Photography</h1>
+        <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+    </div>
+    </div>
+    <div>
+      <div class="a">  
+        <img
+        src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+    </div>
+    <div class="b">
+        <h1>Social Media</h1>
+        <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+    </div>
+    </div>
+    <div>
+      <div class="a">  
+        <img
+        src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+    </div>
+    <div class="b">
+        <h1>Development</h1>
+        <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+    </div>
+    </div>
+    <div>
+      <div class="a">  
+        <img
+        src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+    </div>
+    <div class="b">
+        <h1>Design</h1>
+        <p>Cras vitae turpls lacinia, lacinia lacus non, fermentum nisi.</p>
+    </div>
+    </div>
+    </div>
+
+    <h1>Certified Teachers</h1>
+    <p id="description">
+      Separated they live in. A small river named Duden flows by their place and
+      supplies it with the necessary regelialia. It is a paradisematic country
+    </p>
+    <!-- Teachers Section -->
+    <div id="teachers">
+      <div class="s">
+        <img src="https://media.istockphoto.com/photos/winter-mountain-peaks-landscape-picture-id508957460?k=20&m=508957460&s=170667a&w=0&h=xd3zrwM6mfFCkmLjn8Zzu1eLHqSOFdZjG_ZVhK5Ufmo="/>
+        <h2>Binna Wilson</h2>
+        <p>ENGLISH TEACHER</p>
+        <p>Iam an ambitious workholic, but apart from that pretty simple person</p>
+      </div>
+      <div class="s">
+        <img src="https://media.istockphoto.com/photos/blue-tinted-high-rocky-mountain-landscape-beautiful-scenic-view-of-picture-id1202298150?k=20&m=1202298150&s=170667a&w=0&h=ZsRtunifuEdPh76g71xUvjGLapnG_iXzlLAXkxu2278="/>
+        <h2>Mitch Parker</h2>
+        <p>Art TEACHER</p>
+        <p>Iam an ambitious workholic, but apart from that pretty simple person</p>
+      </div>
+      <div class="s">
+        <img src="https://media.istockphoto.com/photos/flightseeing-anchorage-alaska-picture-id530460079?k=20&m=530460079&s=170667a&w=0&h=WkkHVOgjgtw4kNlu1DcNJ912ojHzj0o0OxsED3zxO78="/>
+        <h2>Stella Smith</h2>
+        <p>Art TEACHER</p>
+        <p>Iam an ambitious workholic, but apart from that pretty simple person</p>
+      </div>
+      <div class="s">
+        <img src="https://media.istockphoto.com/photos/eagle-circling-around-mount-gongga-picture-id1156877431?k=20&m=1156877431&s=612x612&w=0&h=y_Em1oaJlQYt9Ri_bP_uZ9N4UZW6nzJW3JkOvweL5vU="/>
+        <h2>Monshe Henderson</h2>
+        <p>Science TEACHER</p>
+        <p>Iam an ambitious workholic, but apart from that pretty simple person</p>
+      </div>
+    </div>
+  </body>
+</html>

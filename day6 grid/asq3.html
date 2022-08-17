@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head1{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(2,100px);
+            grid-gap:20px;
+            width:50%;
+            margin:auto;
+            padding-top:50px;
+            grid-template-areas: 
+            "i i j k "
+            "l m j k"
+        }
+        #head1>div{
+            background-color:rgb(48, 45, 45);
+            font-size: 20px;
+            color:white;
+            border-radius:5px;
+        }
+        .a{
+            grid-area:i;
+        }
+        .b{
+            grid-area:j;
+        }
+        .c{
+            grid-area:k;
+        }
+        .d{
+            grid-area:l;
+        }
+        .e{
+            grid-area:m;
+        }
+        #head2{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-gap:20px;
+            width:50%;
+            margin:auto;
+            padding-top:100px;
+            grid-template-areas: 
+            "n n o o"
+            "p q q q"
+            "r r r r"  
+        }
+        #head2>div{
+            background-color:rgb(48, 45, 45);
+            font-size: 20px;
+            color:white;
+            border-radius:5px;
+            padding:20px;
+        }
+        .f{
+            grid-area:n;
+        }
+        .g{
+            grid-area:o;
+        }
+        .h{
+            grid-area:p;
+        }
+        .i{
+            grid-area:q;
+        }
+        .j{
+            grid-area:r;
+        }
+    </style>
+</head>
+<body>
+    <div id="head1">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">E</div>
+        <div class="d">C</div>
+        <div class="e">D</div>
+    </div>
+    <div id="head2">
+        <div class="f">A</div>
+        <div class="g">B</div>
+        <div class="h">C</div>
+        <div class="i">D</div>
+        <div class="j">E</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        h3+h1{
+            text-align: center;
+        }
+        #head{
+            /* border:1px solid red; */
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:auto;
+            grid-gap:20px;
+            
+            
+        }
+        #head>div{
+            /* border:1px solid green; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding:12px;
+        }
+        p{
+            font-size:20px;
+            color:grey;
+
+        }
+        p+p{
+            font-size:20px;
+            color:orangered;
+
+        }
+        img{
+            width:100%;
+            height:auto;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        @media all and (max-width:379px){
+            #head{
+                display:grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows:repeat(4,auto);
+                gap:20px;
+                
+
+            }
+        }
+        @media all and (min-width:380px) and (max-width:700px){
+            #head{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows:repeat(2,auto);
+                gap:20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>OUR BLOG</h3>
+    <h1>RECENT BLOG</h1>
+    <div id="head">
+        <div>
+            <img
+            src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODYxOTg3Mjl8fGVufDB8fHx8&dpr=1&auto=format&fit=crop&w=294&q=60"/>
+            <p>ADMIN DEC.23.2020 3</p>
+            <p>COMMENTS</p>
+            <h1>Best Hotel Near Beach in Hawaii</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+
+        </div>
+        <div>
+            <img
+            src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODYxOTg3Mjl8fGVufDB8fHx8&dpr=1&auto=format&fit=crop&w=294&q=60"/>
+            <p>ADMIN DEC.23.2020 3 </p>
+            <p>COMMENTS</p>
+            <h1>Best Hotel Near Beach in Hawaii</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+        </div>
+        <div> 
+            <img
+            src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODYxOTg3Mjl8fGVufDB8fHx8&dpr=1&auto=format&fit=crop&w=294&q=60"/>
+            <p>ADMIN DEC.23.2020 3 </p>
+            <p>COMMENTS</p>
+            <h1>Best Hotel Near Beach in Hawaii</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p></div>
+        <div> 
+            <img
+            src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODYxOTg3Mjl8fGVufDB8fHx8&dpr=1&auto=format&fit=crop&w=294&q=60"/>
+            <p>ADMIN DEC.23.2020 3 </p>
+            <p>COMMENTS</p>
+            <h1>Best Hotel Near Beach in Hawaii</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p></div>
+    </div>
+</body>
+</html>

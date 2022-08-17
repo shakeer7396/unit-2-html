@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+.price1{
+    display: flex;
+    justify-content: space-around;
+}</style>
+<body>
+    <button onclick="window.location.href='mens.html'">Go To Shop</button>
+    <div id="container">
+
+    </div>
+    <h1 id="sum">0</h1>
+</body>
+</html>
+<script>
+    var cartArr=JSON.parse(localStorage.getItem("cartData")) || [];
+    console.log(cartArr)
+
+    function showData(){
+        
+    cartArr.map(function(elem,index,arr)
+    {
+        var mainDiv=document.createElement("div");
+    
+        var image=document.createElement("img");
+        image.setAttribute("src",elem.image_url)
+
+        var name=document.createElement("p");
+        name.innerText=elem.name
+
+        var innerDiv=document.createElement("div");
+        innerDiv.setAttribute("class","price1")
+
+        var price=document.createElement("p");
+        price.innerText=elem.price + "-" + elem.qty;
+        var strikedoffprice=document.createElement("p");
+        strikedoffprice.innerText=elem.strikedoffprice
+        strikedoffprice.style.textDecoration="Line-through"
+       
+        innerDiv.append(price,strikedoffprice)
+
+        var button=document.createElement("button")
+        button.innerText="ADD +1"
+
+        button.addEventListener("click", function()
+        {
+            increaseqty(index);
+            
+        })
+
+        var button1=document.createElement("button")
+        button1.innerText="DEC -1"
+
+        button1.addEventListener("click", function()
+        {
+            decreaseqty(index);
+           
+        })
+        
+
+        mainDiv.append(image,name,innerDiv,button,button1)
+        document.querySelector("#container").append(mainDiv)
+    });
+     }
+    
+
+    function totalprice(){
+        var sum=cartArr.reduce(function(acc,elem,index,arr)
+        {
+            return acc+(elem.price*elem.qty)
+            
+        },0);
+        //document.setItem()
+        document.getElementById("sum").textContent=sum;
+    }
+
+    
+    totalprice() 
+    showData()
+    
+    function increaseqty(index){
+        
+        cartArr[index].qty++
+        console.log(cartArr)
+        localStorage.setItem("cartData", JSON.stringify(cartArr));
+        // showData()
+        totalprice();
+    }
+
+    function decreaseqty(index){
+        
+        cartArr[index].qty--
+        console.log(cartArr)
+        localStorage.setItem("cartData", JSON.stringify(cartArr));
+        //showData(cartArr);
+        totalprice();       
+    }
+</script>

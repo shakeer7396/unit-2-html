@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>women</title> 
+    <style>
+        body{
+    font-family: Verdana, Tahoma, sans-serif;
+    padding:20px;
+    margin:10px auto;
+}
+#nav{
+    width: 100%;
+    color: black;
+    background-color:rgb(230,230,230) ;
+    text-align: center;
+    height: 70px;
+    padding: 1px;
+    font-size: 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+   
+}
+
+#uppernav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* position: fixed;  */
+     background-color: white;
+}
+
+#uppernav > div:nth-child(1){
+    width: 300px;
+    display: flex;
+   justify-content: space-evenly;
+}
+#lowernav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* position: fixed;
+    background-color: white; */
+}
+#lowernav > div:nth-child(1){
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#search{
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 0.3px solid grey;
+    padding: 15px;
+    font-size: 20px;
+}
+#signupbar {
+    margin-top:40px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#signupbar > div {
+margin-left: 25px;
+}
+.firstline{
+    /* border:1px solid red; */
+    display:flex;
+    margin-top: 40px;
+    /* padding:30px; */
+
+}
+.firstline>.text{
+    text-align:center;
+    padding: 0px 100px 20px 100px;
+    
+}
+.text>h1{
+    font-size: 50px;
+}
+.text>p{
+    font-size:30px;
+    line-height:35px ;
+}
+.text>button{
+    font-size: 18px;
+    font-weight: bold;
+
+    padding:20px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+#secondline{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 650px;
+    gap:20px;
+    /* border:1px solid red; */
+    margin-top: 50px;
+
+}
+
+#secondline>div>img{
+    width:100%;
+    height:80%
+}
+.sec2{
+    text-align: center; 
+    /* padding-top:100px; */
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS--tBvPoiI19dLDrGEqiuw60UNF_PzPVQbw&usqp=CAU);
+    width:100%;
+    height:100%;
+    color:white;
+    
+    
+}
+#sec2b{
+    margin-top:40%;
+}
+#third{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 600px;
+    /* border:1px solid yellow; */
+    grid-gap:20px;
+    
+}
+#third>div{
+    /* border:1px solid red; */
+    line-height: 10px;
+}
+
+#a>img{
+    width:100%;
+    height:70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* background-image:url(https://cdn-images.farfetch-contents.com/17/99/67/51/17996751_38182427_1000.jpg); */
+
+}
+.data3{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+   padding-top:30px;
+}
+#b>img{
+    width:100%;
+    height:70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* background-image:url(https://cdn-images.farfetch-contents.com/17/99/67/51/17996751_38182427_1000.jpg); */
+
+}
+#c>img{
+    width:100%;
+    height:70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* background-image:url(https://cdn-images.farfetch-contents.com/17/99/67/51/17996751_38182427_1000.jpg); */
+
+}
+#d>img{
+    width:100%;
+    height:70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* background-image:url(https://cdn-images.farfetch-contents.com/17/99/67/51/17996751_38182427_1000.jpg); */
+
+}
+#thirdB{
+    padding:15px;
+    font-size:20px ;
+    margin-left:49%;
+    background-color: whitesmoke;
+    font-weight: bold;
+    border-radius: 6px;
+
+}
+.data4{
+    font-size:30px;
+    text-align: center;
+    padding-bottom:15px;
+}
+#forth{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 700px;
+    grid-gap:20px;
+    /* border:1px solid pink; */
+
+}
+
+#forth>div>img{
+    width:100%;
+    height:80%;
+}
+.data5{
+    font-size:40px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin:30px 0px 30px 0px
+}
+#fifth{
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: 550px;
+    grid-gap:20px;
+    /* border:1px solid violet; */
+}
+#fifth>div{
+    /* border:1px solid red; */
+    line-height: 10px;
+
+}
+#fifth>div>img{
+    width:100%;
+    height:70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+#fifthB{
+    padding:15px;
+    font-size:20px ;
+    margin-left:49%;
+    background-color: whitesmoke;
+    font-weight: bold;
+    border-radius: 6px;
+
+}
+.data6{
+    font-size:40px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin:50px 0px 40px 0px
+}
+#sixth{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 700px;
+    grid-gap:20px;
+    /* border:1px solid pink; */
+    margin-bottom: 50px;
+
+}
+
+#sixth>div>img{
+    width:100%;
+    height:80%;
+}
+#seventh{
+    display:grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 180px;
+    grid-gap:20px;
+    /* border:1px solid purple; */
+
+}
+
+#icon{
+    width:25%;
+    height:25%;
+}
+#eight{
+    height:200px;
+    width:70%;
+    /* border:1px solid blue; */
+    margin:50px auto;
+}
+#eight>h1{
+    font-size: 50px;
+}
+#eight>p{
+    font-size:20px;
+}
+#nine{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width:70%;
+    /* border:1px solid mediumvioletred; */
+    margin:0px auto;
+    grid-gap:10px;
+}
+#nine>div{
+    /* border:1px solid red; */
+    font-size:20px;
+   
+}
+.box{
+    text-align: center;
+}
+#nineB{
+    font-size: 20px;
+    padding: 8px;
+    background-color: black;
+    color:white;
+    border-radius: 6px;
+}
+#input{
+    font-size: 20px;
+    padding: 8px;
+    background-color:whitesmoke;
+    
+    border-radius: 6px;
+}
+#ten{
+    width:100%;
+    height:550px;
+    border:1px solid black;
+    margin-top:50px;
+    color: white;
+    background-color: black;
+}
+#tena{
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: 450px;
+    grid-gap:20px;
+    /* border:1px solid green; */
+    font-size:20px;
+   
+    margin-bottom: 20px;
+    
+}
+
+#icons{
+    display:flex;
+    justify-content: space-between;
+}
+
+    </style>   
+<!-- <link rel="stylesheet" href="/project farfetch/women.css" /> -->
+<script src="https://kit.fontawesome.com/28b8411688.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav">
+        <p onclick="window.location.href='index.html'">Incomming  |Shop the latest arival here  | </p>
+    </div>
+    <div id="nav1">
+        <div id="uppernav"> 
+           <div>
+            <p onclick="window.location.href='women.html'">Women</p>
+            <p  onclick="window.location.href='index.html'">Men</p>
+            <p  onclick="window.location.href='kids.html'">kids</p>        
+           </div>        
+           <div>
+               <h1>FARFETCH</h1>
+           </div>
+           <div id="signupbar">
+               <div>
+              <i class="fas fa-flag-usa"></i>
+            </div>
+            <div id="tosignin">
+                <i class="far fa-user" onclick="window.location.href='signup.html'"></i>
+            </div>
+            <div>
+               <i class="far fa-star"></i>
+            </div>
+            <div>
+               <i class="fas fa-shopping-bag"></i>
+            </div>
+            </div>
+        </div>
+        <div id="lowernav">
+            <div>
+                <p>New in</p>
+                <p>Shop by</p>
+                <p>Designers</p>
+                <p>Clothing</p>
+                <p>Shoes</p>
+                <p>Sneakers</p>
+                <p>Bags</p>
+                <p>Accessories</p>
+                <p>Watches</p>
+                <p>Sale</p>
+            </div>
+            <div>                
+                <input id="search" placeholder="Search" >                
+            </div>
+        </div>
+    </div>
+        <div class="firstline">
+            <div class="text">               
+                <h1>
+                    DAVID MORRIS FINE JEWWLS : MODERN WORKS OF ART
+                </h1>                
+                   <p>For David Morris, jewelry is an art form. The maison's artisens work only with the most flawless precious stones, meaning a single execution neclace can take months, even years,to perfect. As new pieces arrive on FARFETCH, our head of jewelary Min Lee shares the story behind the design house's extraordinary approach</p>
+                    <button id="bt" onclick="window.location.href='womensproducts.html'">Read And Shop</button>               
+            </div>
+            <div>
+                <img 
+                src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219574/data/cbf77932d7ea878fc7a567e2b51dff9c.jpg?ratio=1x1_messaging-side&minWidth=637"/>
+            </div>
+        </div>
+      <div id="secondline">
+          <div>
+              <img
+              src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219568/data/2480346b07ea2364850d2a7afca814a0.jpg?ratio=1x1_two-columns&minWidth=637"/>
+              <p>THE NEW SEASON whistlist</p>
+              <p>Proenza Schouler, Prada, Saint Laurent, Fendi — your expertly curated view of newness from the names to know</p>
+          </div>
+          <div class="sec2">
+              <div id="sec2b">
+             <h2>ALBERTA FERRETTI WOLFORD</h2>
+             <p>Alberta Ferretti X Wolford</p>
+            </div>
+          </div>
+      </div>
+      <div class="data3"> 
+          <p>New in: hand-picked daily from the world’s best brands and </p>
+          <p>boutiques</p>
+      </div>
+      <div id="third">
+          <div id="a">
+              <img src="https://cdn-images.farfetch-contents.com/17/67/88/51/17678851_38210429_600.jpg" alt="">
+              <p>New season</p>
+              <h4>versace</h4>
+              <p>Medusa Renaissance-print fluid shirt</p>              
+              <p>2,286</p>
+          </div>
+          <div id="b">
+              <img src="https://cdn-images.farfetch-contents.com/17/68/06/53/17680653_38086079_600.jpg" alt="">
+              <h4>versace</h4>
+              <p>Medusa safety pin crystal necklace</p>
+              <p>728</p>
+          </div>
+          <div id="c">
+              <img src="https://cdn-images.farfetch-contents.com/17/11/13/45/17111345_38248805_600.jpg" alt="">
+                <h4>The Attigo</h4>
+                <p>Lug leather Chelsea boots</p>
+                <p>1,552</p>
+          </div>
+          <div id="d">
+              <img src="https://cdn-images.farfetch-contents.com/17/67/88/62/17678862_38229234_600.jpg" alt="">
+              <p>New Season</p>
+              <h4>Versa</h4>
+              <p>Safety Pin-embellished fine-ribbed</p>
+              <p>Cardigon</p>
+              <p>742</p>
+          </div>
+      </div>
+      <button id="thirdB" onclick="window.location.href='womensproducts.html'">Shop Now</button>
+      <div class="data4">
+       <p>This week’s highlights</p> 
+      </div>
+      <div id="forth">
+          <div>
+              <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219514/data/b590a04b3f339956e87b8c29f4c80250.jpg?ratio=3x4_three-columns&minWidth=409"/>
+              <p>JACQUEMUS</p>
+              <p>Form an orderly queue for Le Chiquito Long</p>
+            </div>
+          <div>
+              <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219522/data/fa1921b07a4d743513379ece17b5f4c7.jpg?ratio=3x4_three-columns&minWidth=409" alt="">
+              <p>THE DAY DRESS EDIT</p>
+              <p>High-impact looks for around the clock</p>
+          </div>
+          <div>
+              <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219530/data/1c41c8ef8a543a1878109f96ad50834e.jpg?ratio=3x4_three-columns&minWidth=409" alt="">
+              <p>VERSACE</p>
+              <p>The spring collection is made to be seen</p>
+          </div>
+      </div>
+      <div class="data5">Trending now: new-season glamour</div>
+      <div id="fifth">
+          <div>
+              <img src="	https://cdn-images.farfetch-contents.com/17/87/66/33/17876633_37739492_600.jpg" alt="">
+                <p>New Season</p>
+                <h4>Valentino</h4>
+                <p>floral-prink silk blouse</p>
+                <p></p>
+                <p>1,859</p>
+          </div>
+          <div>
+              <img src="https://cdn-images.farfetch-contents.com/17/32/28/30/17322830_38093787_600.jpg" alt="">
+              <p>New Season</p>
+              <h4>Versace</h4>
+              <p>Medusa chain mid-heel tweed mules</p>
+              <p>   </p>
+              <p>1,501</p>
+          </div>
+          <div>
+              <img src="https://cdn-images.farfetch-contents.com/18/00/32/14/18003214_38038156_600.jpg" alt="">
+                <p>New Season</p>
+                <h4>Versace</h4>
+                <p>chain-link tweed miniskirt</p>
+                <p>  </p>
+                <p>2,110</p>
+            </div>
+          <div>
+              <img src="https://cdn-images.farfetch-contents.com/17/64/98/66/17649866_38161034_600.jpg" alt="">
+                <p>New Season</p>
+              <h4>Bottega Veneta</h4>
+                <p>The Chain Cassette shoulder bag</p>
+                <p>  </p>
+                <p>7,373</p>
+            </div>
+      </div>
+      <button id="fifthB" onclick="window.location.href='womensproducts.html'">Shop Now</button>
+      <div class="data6">Shop the world’s best boutiques</div>
+      <div id="sixth">
+        <div>
+           <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219542/data/cac8e7caa3e0479918c08efe34253700.jpg?ratio=3x4_three-columns&minWidth=409" alt="">
+           <p>THE CLASSIC EDIT</p>
+           <p>Timeless pieces to love forever</p> 
+        </div>
+        <div>
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219548/data/94266f4c545a87dd55b612c55a777344.jpg?ratio=3x4_three-columns&minWidth=409" alt="">
+            <p>THE MODERN FEMININITY EDIT</p>
+            <p>Dreamy silhouettes and muted palettes</p>
+        </div>
+        <div>
+           <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/3219556/data/9c3fa9a242c287340da7907146af9ef0.jpg?ratio=3x4_three-columns&minWidth=409" alt="">
+            <p>THE EXPRESSIONIST EDIT</p>
+            <p>Cult collaborations and exciting launches</p>
+        </div>
+      </div>
+      <div id="seventh">
+          <div>
+              <a href="https://www.farfetch.com/in/how-to-shop"><i class="fa-regular fa-user"></i></a>
+              <p>
+                  HOW TO SHOP
+              </p> 
+              <P>Your guide to shopping and placcing orders</P>
+          </div>
+          <div>
+              <a href="https://www.farfetch.com/in/faqs">
+                <i class="fa-regular fa-circle-question"></i></a>
+          <p>FAQS</p>
+          <P>Your questions answered</P>
+                </div>
+          <div>
+              <a href="https://www.farfetch.com/in/contact-us">
+                <i class="fa-regular fa-message"></i></a>
+          <p>NEED HELP?</p>
+          <p>Contact our global Customer Service team</p>
+            </div>
+      </div>
+      <div id="eight">
+          <h1>DOWNLOAD THE FARFETCH APP</h1>
+          <p>Enjoy exclusive content on our app, including personalized product edits as well as our Visual Search tool for iOS. More about the app</p>
+      </div>
+      <div id="nine">
+          <div>
+              <p>EMAIL ME</p>
+              <P>Enter your email and we'll send you a link to download the free app</P>
+                <div id="last">
+              <input type="text" placeholder="Email address" id="input" >
+              <button id="nineB">Send</button>
+            </div>
+            </div>
+          <div class="box">
+              <p>SCAN QR CODE</p>
+              <img src="data:image/png;base64,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" alt="">
+          </div>
+      </div>
+      <div id="ten">
+          <div id="tena">
+              <div>
+                  <p>FARFETCH AAP</p>
+                  <p>
+                    Farfetch App for iOS and Android</p>
+              </div>
+              <div>
+                  <p>DESTINATION/REGION, CURRENCY AND LANGUAGE</p>                  
+                  <p> India,usd</p>
+                  <p>FOLLOW US</p>
+                  <div id="icons">
+                      <div>
+                          <a href="https://instagram.com/farfetch"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                      <div><a href="https://www.facebook.com/farfetch"> <i class="fab fa-facebook-f"></i></a>
+                    </div>
+                      <div>
+                          <a href="https://twitter.com/farfetch"> <i class="fab fa-twitter"></i></a>
+                      </div>
+                      <div>
+                          <a href="https://www.snapchat.com/add/farfetch.com"><i class="fa-brands fa-snapchat"></i></a>
+                      </div>
+                      <div>
+                          <a href="https://www.pinterest.com/farfetch"><i class="fab fa-pinterest-p"></i></a>
+                      </div>
+                      <div>
+                          <a href="https://www.youtube.com/user/farfetchdotcom"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <p>CUSTOMER SERVICE</p>
+                  <p>Help & contact us</p>
+                  <p>Orders & shipping</p>
+                  <p>Payment & pricing</p>
+                  <p>Returns & refunds</p>
+                  <p>FAQs</p>
+                  <p>Terms & conditions</p>
+                  <p>Promotion terms & conditions</p>
+                  <p>Privacy policy</p>
+                  <p>Accessibility</p></div>             
+              <div> <p>ABOUT FARFETCH</p>
+                  <p>About Us</p>
+                  <p>Investors</p>
+                  <p>Boutique Partners</p>
+                  <p>Affiliate Programme</p>
+                  <p>Student discount UNiDAYS</p>
+                  <p>Careers</p>
+                  <p>Customer Promise</p>
+                  <p>FARFETCH App</p>
+                  <p>Positively FARFETCH</p>
+              </div>
+          </div>
+          <div>'FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK Limited and are registered in numerous jurisdictions around the world.
+            © Copyright 2022 FARFETCH UK Limited. All rights reserved.</div>
+      </div>
+</body>
+</html>
