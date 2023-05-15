@@ -289,8 +289,7 @@
   mensData.map(function(elem,index,arr)
   {
       var mainDiv=document.createElement("div");
-  
-  
+
       var image=document.createElement("img");
       image.setAttribute("src",elem.image_url)
   
@@ -302,9 +301,11 @@
   
       var price=document.createElement("p");
       price.innerText=elem.price
+
       var strikedoffprice=document.createElement("p");
       strikedoffprice.innerText=elem.strikedoffprice
       strikedoffprice.style.textDecoration="Line-through"
+
       var cart=document.createElement("button")
       cart.innerText="ADD TO CART"
       cart.addEventListener("click",function(){
