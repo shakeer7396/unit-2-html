@@ -5,7 +5,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <title>Document</title>
-     <!-- <style>
+     <style>
        #container{
          display: flex;
          margin-left: 300px;
@@ -20,7 +20,7 @@
          color: rgb(0, 47, 255);
        }
 
-     </style> -->
+     </style>
    </head>
  
    <body>
@@ -66,10 +66,57 @@
          </div>
      </div> -->
      <div id ="container" >
-      
+      <div>
+        <form id="myform">
+          <h1>Add Products</h1>
+          <h3>Category</h3>
+          <select id="select">
+            <option>Electronic</option>
+            <option>Furniture</option>
+            <option>Home application</option>
+            <option>Books</option>
+            
+          </select>
+          <br>
+          <h3>Product Titile</h3>
+          <input type="text" id="title" placeholder="Enter Product Title">
+          <br>
+          <h3>Product Description</h3>
+          <input type="text" id="discription" placeholder="Enter Product Description">
+          <br>
+          <h3>Product Price</h3>
+          <input type="text" id="price" placeholder="Enter Product Price">
+          <p></p>
+          <input type="submit" value="Add Details">
+        </form>
+      </div>
+      <div>
+        <h1>Products List</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>No</td>
+              <td>Category</td>
+              <td>Title</td>
+              <td>Description</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
      </div>
    </body>
  </html>
+ <script>
+  document.querySelector("#myform").addEventListener("submit",addDetails)
+
+  var productCart=JSON.parse(localStorage.getItem("cartInfo"))||[];
+
+  
+ </script>
  <!-- <script>
     document.querySelector("#myform").addEventListener("submit",addDetails)
 
